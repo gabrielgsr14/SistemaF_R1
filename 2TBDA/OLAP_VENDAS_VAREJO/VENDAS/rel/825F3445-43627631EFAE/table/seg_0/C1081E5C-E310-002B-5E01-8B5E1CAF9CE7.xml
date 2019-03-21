@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1081E5C-E310-002B-5E01-8B5E1CAF9CE7" name="DIM_TEMPO">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>653AE48D-CE19-64D8-7E6C-78002622A383</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_evento" id="8F959B4C-0279-B94D-3E2D-27A6738E829C">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>surrogate key da dimensao tempo</comment>
+<commentInRDBMS>surrogate key da dimensao tempo</commentInRDBMS>
+<generatorID>352F00A5-8874-2A3B-CD2F-D107EE1E9536</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_evento" id="FAFA67CF-1CED-F5D3-CEAF-48A37A003638">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Data do evento</comment>
+<commentInRDBMS>Data do evento</commentInRDBMS>
+<generatorID>6B1F7025-02F6-D87F-A9B5-1B8F262E99F4</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_mes" id="53C93C66-8095-A71C-7723-8DCAB3B4C0D9">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Numero do mes do evento</comment>
+<commentInRDBMS>Numero do mes do evento</commentInRDBMS>
+<generatorID>8176CA72-3842-AAC4-7911-FDEA3EB6E835</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_mes" id="21B2A57E-E699-F7C7-D09F-3EA137780D85">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Nome do mes do evento</comment>
+<commentInRDBMS>Nome do mes do evento</commentInRDBMS>
+<generatorID>77215FA3-472B-FE94-3C80-CC80BAEC993A</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_ano" id="386B342E-5553-1325-28A5-71033C3C64AE">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Numero do ano do evento</comment>
+<commentInRDBMS>Numero do ano do evento</commentInRDBMS>
+<generatorID>07A4D671-0FA2-E237-8889-861E3815622B</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_trimestre" id="7E4CBF50-9670-8E58-5BBE-09E08A110674">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:50:28 UTC</createdTime>
+<comment>Nome do trimestre do evento</comment>
+<commentInRDBMS>Nome do trimestre do evento</commentInRDBMS>
+<generatorID>56714DB1-3E13-E425-6258-FCC72E1CAC41</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_dia_semana" id="F2F91E65-690E-5EF2-5812-3256CC611FF2">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:50:28 UTC</createdTime>
+<comment>Nome do dia da semana</comment>
+<commentInRDBMS>Nome do dia da semana</commentInRDBMS>
+<generatorID>A0024969-6FFE-3978-5B02-F4CCAE437C06</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEA24EA7-2B02-648D-8B49-4225F8840D52" name="DIM_TEMPO_PK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>949AA578-23D8-A9D1-EF6C-58628E7060A1</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F959B4C-0279-B94D-3E2D-27A6738E829C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

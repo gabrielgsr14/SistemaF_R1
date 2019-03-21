@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A9FE32B-24A9-A300-0721-2017CA41BA65" name="DIM_PRODUTO">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:22 UTC</createdTime>
+<generatorID>3EAB3483-41A2-E865-34FA-E3DC96D20E6C</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_produto" id="1B1D0981-6295-8F4D-D5BC-C2F3AB48525B">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Surrogate key da dimensao produto</comment>
+<commentInRDBMS>Surrogate key da dimensao produto</commentInRDBMS>
+<generatorID>A65F70A2-8A07-F1D0-E087-6E4C25ADBA25</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_produto" id="470F12F8-52A9-A78F-36CC-0E0E08627A93">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Nome do produto no sistema transacional de origem</comment>
+<generatorID>A0F3348F-69DF-3A39-DD4A-71EEF37DF1D3</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EFF4B65-A028-5CEA-6C57-E70DC97F22A4" name="DIM_PRODUTO_PK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>3E1323AD-5910-1A5B-C92D-954AD552D3E3</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B1D0981-6295-8F4D-D5BC-C2F3AB48525B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

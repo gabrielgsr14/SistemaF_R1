@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F97673A3-5047-9AE2-7595-799E3D42C70E" name="FTO_VENDA">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>EBE70BDF-4947-7E98-89F6-A80BF16E4AA2</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_venda" id="9CE40DF1-F6B7-A12F-D22E-8E979051BDDE">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Surrogate key da fato venda</comment>
+<commentInRDBMS>Surrogate key da fato venda</commentInRDBMS>
+<generatorID>95FE8784-B84E-A3C8-4C3C-237833B8C2E8</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sk_evento" id="E6A89270-4DF3-CDB8-E531-83F8199458B7">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>surrogate key da dimensao tempo</comment>
+<generatorID>C58A337B-031A-BD67-15DA-1C11EB24BA30</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDC92ADD-0A36-1BDA-FF83-0BC2212CFEB4" referredColumn="8F959B4C-0279-B94D-3E2D-27A6738E829C"/>
+</associations>
+</Column>
+<Column name="sk_produto" id="97F147E9-AD10-FE0F-1941-4715CFB165A1">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Surrogate key da dimensao produto</comment>
+<generatorID>ACD95BDC-69F2-193A-167A-BAB1D7DFB6AE</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6BE7946-E137-7F4F-0A85-21C46682B345" referredColumn="1B1D0981-6295-8F4D-D5BC-C2F3AB48525B"/>
+</associations>
+</Column>
+<Column name="sk_vendedor" id="C3777EA1-623A-F57A-76A9-C783679EB93C">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Surrogate key da dimensao vendedor</comment>
+<generatorID>DCBC40B9-BEF3-7970-76A8-6C58B06A77E8</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AA5E352-E803-49B5-68E4-6CD5B55BA012" referredColumn="56B5DA31-B85F-12E7-8335-3F1561F0D1E1"/>
+</associations>
+</Column>
+<Column name="qt_venda" id="9276286E-D3E0-0578-E7FE-B46A16426265">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Quantidade de produtos vendidos</comment>
+<commentInRDBMS>Quantidade de produtos vendidos</commentInRDBMS>
+<generatorID>72D776A6-E358-9312-D2DD-C5C80ADE600D</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_venda" id="ADECAFB3-C945-FE9C-4E07-7EDD03ECDE1A">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Valor em reais dos produtos vendidos</comment>
+<commentInRDBMS>Valor em reais dos produtos vendidos</commentInRDBMS>
+<generatorID>956FAA67-B9DF-223B-8B3A-DF6F52D1057C</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E89C00A9-ADE5-4408-9BC6-8F4E64CD808E" name="FTO_VENDA_PK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>9755CF1D-EED2-FC3E-D97C-00AF000713CF</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CE40DF1-F6B7-A12F-D22E-8E979051BDDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1757DE3-2334-520B-E6F2-4EBBB6C0573B" name="FTO_VENDA_DIM_TEMPO_FK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>4E70DA1D-C63C-D341-087D-835C7E1C8269</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6A89270-4DF3-CDB8-E531-83F8199458B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DBA327D-A25A-3DCD-EBB0-8334C38D8EE2" name="FTO_VENDA_DIM_VENDEDOR_FK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>EBBF5937-EB1F-7B18-B4C0-54720C8EA23B</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3777EA1-623A-F57A-76A9-C783679EB93C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04834992-2125-5E07-7769-09134E9EC777" name="FTO_VENDA_DIM_PRODUTO_FK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>B58FC43C-5709-17F6-B0B5-15F43E4D0685</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97F147E9-AD10-FE0F-1941-4715CFB165A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDEBE54A-9903-4565-F707-FA9BC76FE091" name="DIM_VENDEDOR">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>FB1EA99D-C79A-EA64-20EA-AC08BA1EA2B2</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sk_vendedor" id="56B5DA31-B85F-12E7-8335-3F1561F0D1E1">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Surrogate key da dimensao vendedor</comment>
+<commentInRDBMS>Surrogate key da dimensao vendedor</commentInRDBMS>
+<generatorID>243AAEC6-3396-7CC1-A00F-E68B24981BFA</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_vendedor" id="E1FBC928-7903-894C-1EC7-55690BB26DCC">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<comment>Nome do vendedor no sistema transacional de origem (inclui vendedores ativos e vendedores desligados)</comment>
+<commentInRDBMS>Nome do vendedor no sistema transacional de origem (inclui vendedores ativos e vendedores desligados)</commentInRDBMS>
+<generatorID>6BE15581-BBB1-C600-3A20-D389ED2F56E4</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf_vendedor" id="B5E63D31-D27E-0478-0FB2-E17489CF94EE">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:50:28 UTC</createdTime>
+<comment>Numero do CPF do vendedor</comment>
+<commentInRDBMS>Numero do CPF do vendedor</commentInRDBMS>
+<generatorID>53ACCFF1-0718-45AB-0F46-C58577A53992</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84E64F62-7F3F-4A37-8D14-F36A5864B636" name="DIM_VENDEDOR_PK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:30:23 UTC</createdTime>
+<generatorID>9514BEA8-4AC0-A68A-EB3E-51513032F829</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B5DA31-B85F-12E7-8335-3F1561F0D1E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

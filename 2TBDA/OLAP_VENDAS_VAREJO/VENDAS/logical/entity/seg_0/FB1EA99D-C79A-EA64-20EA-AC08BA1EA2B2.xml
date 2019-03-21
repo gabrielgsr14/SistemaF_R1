@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FB1EA99D-C79A-EA64-20EA-AC08BA1EA2B2" name="DIM_VENDEDOR">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:16:09 UTC</createdTime>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_vendedor" id="243AAEC6-3396-7CC1-A00F-E68B24981BFA">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:16:31 UTC</createdTime>
+<comment>Surrogate key da dimensao vendedor</comment>
+<commentInRDBMS>Surrogate key da dimensao vendedor</commentInRDBMS>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_vendedor" id="6BE15581-BBB1-C600-3A20-D389ED2F56E4">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:17:19 UTC</createdTime>
+<comment>Nome do vendedor no sistema transacional de origem (inclui vendedores ativos e vendedores desligados)</comment>
+<commentInRDBMS>Nome do vendedor no sistema transacional de origem (inclui vendedores ativos e vendedores desligados)</commentInRDBMS>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cpf_vendedor" id="53ACCFF1-0718-45AB-0F46-C58577A53992">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:49:04 UTC</createdTime>
+<comment>Numero do CPF do vendedor</comment>
+<commentInRDBMS>Numero do CPF do vendedor</commentInRDBMS>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9514BEA8-4AC0-A68A-EB3E-51513032F829" name="DIM_VENDEDOR PK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:17:09 UTC</createdTime>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>243AAEC6-3396-7CC1-A00F-E68B24981BFA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

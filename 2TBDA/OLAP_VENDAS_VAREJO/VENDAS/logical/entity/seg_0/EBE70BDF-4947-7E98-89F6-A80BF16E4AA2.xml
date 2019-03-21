@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBE70BDF-4947-7E98-89F6-A80BF16E4AA2" name="FTO_VENDA">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:18:59 UTC</createdTime>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sk_venda" id="95FE8784-B84E-A3C8-4C3C-237833B8C2E8">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:20:54 UTC</createdTime>
+<comment>Surrogate key da fato venda</comment>
+<commentInRDBMS>Surrogate key da fato venda</commentInRDBMS>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sk_evento" id="C58A337B-031A-BD67-15DA-1C11EB24BA30">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:27:13 UTC</createdTime>
+<comment>surrogate key da dimensao tempo</comment>
+<generatorID>4E70DA1D-C63C-D341-087D-835C7E1C8269</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<referedAttribute>352F00A5-8874-2A3B-CD2F-D107EE1E9536</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sk_produto" id="ACD95BDC-69F2-193A-167A-BAB1D7DFB6AE">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:27:26 UTC</createdTime>
+<comment>Surrogate key da dimensao produto</comment>
+<generatorID>B58FC43C-5709-17F6-B0B5-15F43E4D0685</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<referedAttribute>A65F70A2-8A07-F1D0-E087-6E4C25ADBA25</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sk_vendedor" id="DCBC40B9-BEF3-7970-76A8-6C58B06A77E8">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:27:21 UTC</createdTime>
+<comment>Surrogate key da dimensao vendedor</comment>
+<generatorID>EBBF5937-EB1F-7B18-B4C0-54720C8EA23B</generatorID>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<referedAttribute>243AAEC6-3396-7CC1-A00F-E68B24981BFA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_venda" id="72D776A6-E358-9312-D2DD-C5C80ADE600D">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:22:54 UTC</createdTime>
+<comment>Quantidade de produtos vendidos</comment>
+<commentInRDBMS>Quantidade de produtos vendidos</commentInRDBMS>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_venda" id="956FAA67-B9DF-223B-8B3A-DF6F52D1057C">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:23:01 UTC</createdTime>
+<comment>Valor em reais dos produtos vendidos</comment>
+<commentInRDBMS>Valor em reais dos produtos vendidos</commentInRDBMS>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9755CF1D-EED2-FC3E-D97C-00AF000713CF" name="FTO_VENDA PK">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2019-03-07 14:25:04 UTC</createdTime>
+<ownerDesignName>VENDAS</ownerDesignName>
+<engineerTo>
+<item key="825F3445-EE7E-F70D-2B6B-43627631EFAE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95FE8784-B84E-A3C8-4C3C-237833B8C2E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
